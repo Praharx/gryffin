@@ -3,8 +3,8 @@ import { Open_Sans } from "next/font/google";
 import "./globals.css";
 
 const  open_sans = Open_Sans({
-  subsets: ['latin'], 
-  weight: ['400', '700'], 
+  subsets: ['latin','greek'], 
+  weight: ['400', '700', '500', '300'], 
   preload: true, 
 });
 
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={open_sans.className}>{children}</body>
+      <body className={open_sans.className }>{children}</body>
     </html>
   );
 }

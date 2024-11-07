@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { Sparkles } from "lucide-react";
+import { Sparkles, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 const SecondBrain = ({text} : {text: string}) => {
@@ -21,7 +21,7 @@ const SecondBrain = ({text} : {text: string}) => {
           <span>
             <Sparkles className="h-5 w-5" fill="white" />
           </span>
-          <span className="tracking-tight  ">{text}</span>
+          <span className="tracking-widest text-lg flex">{text}  </span>
         </span>
 
         <span className="absolute inset-0 top-0 left-0 -translate-x-0 -translate-y-0 shadow-[0_0_12px_inset] -z-10 shadow-indigo-300 rounded-xl"></span>
